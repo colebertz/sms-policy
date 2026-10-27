@@ -50,6 +50,28 @@
     <h3>3. Data Security and Opt-Out</h3>
     <p>We implement technical and physical controls to secure collected contact data. Administrators can revoke consent and opt out at any time by replying <strong>STOP</strong> to any received message.</p>
   </section>
+<section id="opt-in" style="margin-top: 30px; border: 1px solid #d0d7de; border-radius: 6px; padding: 24px; background: #ffffff;">
+    <h2>System Administrator Alert Enrollment</h2>
+    <p>Authorized operators can register their direct line for operational incident pings and system status dispatches below.</p>
+    
+    <form onsubmit="return false;" style="display: flex; flex-direction: column; gap: 12px; max-width: 480px;">
+      <label for="admin-name" style="font-weight: 600;">Administrator Name</label>
+      <input type="text" id="admin-name" placeholder="System Admin" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
 
+      <label for="admin-phone" style="font-weight: 600;">Mobile Phone Number</label>
+      <input type="tel" id="admin-phone" placeholder="+1 (555) 000-0000" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+
+      <div style="display: flex; align-items: flex-start; gap: 10px; margin-top: 8px;">
+        <input type="checkbox" id="sms-consent" style="margin-top: 4px;" />
+        <label for="sms-consent" style="font-size: 0.85em; color: #333; line-height: 1.4;">
+          By checking this box and entering your phone number, you agree to receive automated transactional system alerts and operational health notifications from this platform. Consent is not a condition of purchase. Message frequency varies based on system events. Message and data rates may apply. Reply STOP to cancel at any time, or HELP for assistance. View our <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <button type="button" style="margin-top: 10px; padding: 10px; background-color: #0366d6; color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer;">
+        Subscribe to Operational Alerts
+      </button>
+    </form>
+  </section>
 </body>
 </html>
